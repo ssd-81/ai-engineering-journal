@@ -49,6 +49,7 @@ can, skip with no guilt if a deadline hits".
 | Date | Lesson | Quiz | Note |
 |------|--------|------|------|
 | 2025-01-XX | 00/01 Dev Environment | 1/3 | Misread layer-order question; googled GPU check correctly; verified env passes preflight (Python 3.14, Git 2.55). Cloned curriculum to sibling folder `curriculum/`. |
+| 2025-01-XX | 00/02 Git and Collaboration | 3/3 | Set up two-repo layout: `ai-engineering-journal` (LEARNING.md) + `ai-engineering-from-scratch` (fork for lesson work). Deleted orphan `curriculum/` clone. Operating rules: journal commits in `journal/`, code artifacts in `fork/`. |
 
 ## Review queue
 - `phases/00-setup-and-tooling/01-dev-environment` — four-layer env stack: dependency direction (system → pkg mgr → runtime → AI libs) and why standalone installers like `uv`/`rustup` can bootstrap before the runtime.
