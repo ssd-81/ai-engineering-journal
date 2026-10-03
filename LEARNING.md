@@ -10,6 +10,7 @@ priority is job-readiness, not covering every phase equally.
 
 ## Placement
 - Date: 2025-01-XX
+- Started: 2025-01-XX
 - Score: self-selected
 - Entry point: Phase 0: Setup & Tooling
 - Pace: ~10 h/week
@@ -47,6 +48,7 @@ can, skip with no guilt if a deadline hits".
 ## Progress log
 | Date | Lesson | Quiz | Note |
 |------|--------|------|------|
+| 2025-01-XX | 00/01 Dev Environment | 1/3 | Misread layer-order question; googled GPU check correctly; verified env passes preflight (Python 3.14, Git 2.55). Cloned curriculum to sibling folder `curriculum/`. |
 
 ## Review queue
-(empty for now; learn adds lessons the quizzes flag)
+- `phases/00-setup-and-tooling/01-dev-environment` — four-layer env stack: dependency direction (system → pkg mgr → runtime → AI libs) and why standalone installers like `uv`/`rustup` can bootstrap before the runtime.
