@@ -50,7 +50,8 @@ can, skip with no guilt if a deadline hits".
 |------|--------|------|------|
 | 2025-01-XX | 00/01 Dev Environment | 1/3 | Misread layer-order question; googled GPU check correctly; verified env passes preflight (Python 3.14, Git 2.55). Cloned curriculum to sibling folder `curriculum/`. |
 | 2025-01-XX | 00/02 Git and Collaboration | 3/3 | Set up two-repo layout: `ai-engineering-journal` (LEARNING.md) + `ai-engineering-from-scratch` (fork for lesson work). Deleted orphan `curriculum/` clone. Operating rules: journal commits in `journal/`, code artifacts in `fork/`. |
-| 2025-01-XX | 00/03 GPU Setup & Cloud | 3/3 | No local GPU (nvidia-smi absent). Set up venv in fork, installed torch CPU + numpy + matplotlib + jupyter. CPU 3000x3000 matmul: 0.339s. Plan: use Google Colab (free T4) when GPU is needed in Phase 3+. |
+| 2025-01-XX | 00/03 GPU Setup & Cloud | 3/3 | No local GPU (nvidia-smi absent). Set up venv in fork, installed torch CPU + numpy + matplotlib + jupyter. CPU 3000x3000 matmul: 0.339s. Plan: use Google Colab (free T4) when GPU is needed in Phase 3+. NOTE: self-reported gap on 'why GPUs faster' (parallelism, not clock speed) and fp16 rule (derived from hint, not retained). Re-taught both; lesson added to review queue. |
 
 ## Review queue
 - `phases/00-setup-and-tooling/01-dev-environment` — four-layer env stack: dependency direction (system → pkg mgr → runtime → AI libs) and why standalone installers like `uv`/`rustup` can bootstrap before the runtime.
+- `phases/00-setup-and-tooling/03-gpu-setup-and-cloud` — (1) GPU parallelism: thousands of slow cores beat few fast cores for matrix ops; (2) fp16 rule of thumb derivation: 2 bytes/param → VRAM/2 = max params; (3) async GPU: `synchronize()` is the "wait for queue" barrier.
